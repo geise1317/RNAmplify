@@ -13,13 +13,11 @@ import {
   AlertIOS,
   TouchableOpacity,
 } from 'react-native';
-import * as queries from '../graphql/queries';
-import Toast from 'react-native-simple-toast';
-import {ActivityIndicator} from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import StructureScreen from './quizscreens/structure';
 import FrontEndScreen from './quizscreens/structurescreens/frontend';
 import FullStackScreen from './quizscreens/structurescreens/fullstack';
+import AndroidScreen from './quizscreens/structurescreens/androidscreens/android';
 
 const initialState = {name: '', description: ''};
 
@@ -31,6 +29,7 @@ function QuizScreen({navigation}) {
         <QuizStack.Screen name="Structure" component={StructureScreen} options={{ headerShown: false}}/>
         <QuizStack.Screen name="FrontEnd" component={FrontEndScreen} options={{ title: 'Front-End'}}/>
         <QuizStack.Screen name="FullStack" component={FullStackScreen} options={{ title: 'Full-Stack'}}/>
+        <QuizStack.Screen name="Android" component={AndroidScreen} options={{ title: 'Android'}}/>
     </QuizStack.Navigator>
   );
 }

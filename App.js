@@ -1,14 +1,9 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
  *
- * @format
- * @flow strict-local
- * 
  * Username: Admin
  * Password: dnflwlq12
  * 
- *  REST API endpoint: https://ngzifyadsi.execute-api.ca-central-1.amazonaws.com/dev
+ *  
  *  
  */
 
@@ -65,22 +60,7 @@ function App (){
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
+  
 });
 
 const signUpConfig = {
@@ -112,6 +92,6 @@ const signUpConfig = {
   ]
 };
 
-const usernameAttributes = 'My user name';
+//const usernameAttributes = 'My user name';
 
-export default withAuthenticator(App, { signUpConfig, usernameAttributes });
+export default withAuthenticator(App, { signUpConfig });

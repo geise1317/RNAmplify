@@ -10,6 +10,7 @@ import {
     Button,
     Image
   } from 'react-native';
+import { color } from 'react-native-reanimated';
 
   function DetailScreen({ navigation }) {
     return (
@@ -21,14 +22,14 @@ import {
                 resizeMode="contain"
                 />
         </View>
-        <Text style={{marginHorizontal: 20}}>
+        <Text style={{marginHorizontal: 20, color:'#000000'}}>
             Selecting the best development tools such as IDE and computer language for development is the biggest
             and the most important phase when it comes to creating a software. As a mobile application developer,
             selecting the right framework and IDE was time consuming and tricky. The Dev-Tool Selection Support System
              will help those identifying what are some frameworks, languages, and IDE that I can use for the project.
              For example, identifying the best tools for front-end and back-end in the projects.
         </Text>
-        <Text style={{marginHorizontal: 20, marginVertical: 20, fontSize:20, fontWeight: '600'}}>
+        <Text style={{marginHorizontal: 20, marginVertical: 20, fontSize:20, fontWeight: '600', color:'#C1C1C1'}}>
             Developed by Eric Son
         </Text>
       </View>

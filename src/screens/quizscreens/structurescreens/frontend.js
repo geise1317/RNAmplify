@@ -72,7 +72,7 @@ function FrontEndScreen({navigation}) {
             <TouchableOpacity
               style={styles.answerContainer}
               onPress={() =>
-                navigation.navigate('Quizzes', {screen: 'FrontEnd'})
+                navigation.navigate('Quizzes', {screen: 'Android'})
               }>
               <Text style={styles.answerText}>{questions[0]}</Text>
             </TouchableOpacity>

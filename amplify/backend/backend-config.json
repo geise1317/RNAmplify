@@ -1,15 +1,13 @@
 {
   "auth": {
-    "rnamplifymac7f5bd9c9": {
+    "rnamplifyf188109e": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
-        "loginMechanisms": [
-          "EMAIL",
-          "PREFERRED_USERNAME"
-        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
         "signupAttributes": [
           "EMAIL"
         ],
@@ -20,13 +18,15 @@
         "mfaConfiguration": "OFF",
         "mfaTypes": [
           "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
         ]
       }
     }
   },
-  "storage": {},
   "api": {
-    "cis480api": {
+    "rnamplify": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -34,14 +34,12 @@
           "defaultAuthentication": {
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
-              "apiKeyExpirationDays": 120,
-              "description": "CIS 480 Project APIs"
+              "apiKeyExpirationDays": 7
             }
           },
           "additionalAuthenticationProviders": []
         }
       }
     }
-  },
-  "function": {}
+  }
 }

@@ -19,7 +19,7 @@ function HomeScreen({ navigation }) {
         <View>
             <Image 
             source={{uri: 'https://cdni.iconscout.com/illustration/premium/thumb/q-and-a-service-3678714-3098907.png'}} 
-            style={styles.banner}
+            style={{width: 300, height: 300}}
             resizeMode="contain"
             />
         </View>

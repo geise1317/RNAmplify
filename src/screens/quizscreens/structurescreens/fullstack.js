@@ -25,7 +25,7 @@ export default function FullStackScreen({navigation}) {
   const [todos, setTodos] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [questions, setQuestions] = useState([]);
-  const AmplifyURL = "https://reactnative.dev/";
+  const AmplifyURL = "https://docs.amplify.aws/";
   const FirebaseURL = "https://firebase.google.com/";
 
   useEffect(() => {
